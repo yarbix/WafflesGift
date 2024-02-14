@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Regalo para Waffles</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+        }
+
+        @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+        }
+
+        .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+        }
+
+        @keyframes wave {
+        2% {
+            transform: translateX(1);
+        }
+
+        25% {
+            transform: translateX(-25%);
+        }
+
+        50% {
+            transform: translateX(-50%);
+        }
+
+        75% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(1);
+        }
+        }
+
+
+
+
+        *,
+        *:before,
+        *::after {
+        box-sizing: border-box;
+        }
+
+
+        html,
+        body {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        }
+
+
+        html,
+        body {
+        display: block;
+        }
+
+
+        body {
+        line-height: 1.317101995;
+        scroll-behavior: smooth;
+        font-family: sans-serif;
+        }
+
+        button:focus {
+        outline: 0;
+        }
+
+        img,
+        embed,
+        svg,
+        audio,
+        canvas,
+        iframe,
+        video {
+        max-width: 100%;
+        height: auto;
+        vertical-align: middle;
+        }
+
+        hr {
+        height: 0;
+        border: 0;
+        border-bottom: 1px solid #dfdfdf;
+        margin: 0;
+        }
+
+        body {
+        color: #000000;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 0;
+        }
+
+        h1 {
+        font-size: 4rem;
+        margin-top: 0;
+        margin-bottom: 80px;
+        }
+
+        h1 span {
+        color: #d21740;
+        }
+
+        p {
+        margin: 0;
+        }
+
+        .cards-grid {
+        display: flex;
+        grid-gap: 80px;
+        padding-bottom: 60px;
+        }
+
+
+        .flip-card {
+        width: 320px;
+        height: 504px;
+        perspective: 2000px;
+        }
+        .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 28px;
+        transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+        transform-style: preserve-3d;
+        }
+        .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 28px;
+        backface-visibility: hidden;
+        }
+        .flip-card-front {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        .flip-card-back {
+        font-size: 1.25rem;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        padding: 32px;
+        background-color: #ff3954;
+        transform: rotateY(180deg);
+        }
+        .flip-card:hover .flip-card-inner {
+        transform: rotateY(-180deg);
+        }
+
+
+        /* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+        .cards-grid {
+            flex-direction: column; /* Cambia la dirección de la fila a columna */
+            align-items: center; /* Centra los elementos en el eje horizontal */
+        }
+        
+        .flip-card {
+            width: 80%; /* Ajusta el ancho de la tarjeta */
+            margin-bottom: 20px; /* Añade espacio entre las tarjetas */
+        }
+        }
+    </style>
+  </head>
+  <body>
+        <div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <h1>
+            Holaaa: <span>Feliz San Valentin Lily :)))</span>
+        </h1>
+        <div class="cards-grid">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/736x/a6/d5/11/a6d511f2cdaba8b0374bd175e67837d3.jpg');">
+
+                    </div>
+                    <div class="flip-card-back">
+                        Hola, este es un pequeño regalo que planeé hace un tiempo. La verdad, espero que te guste. No sabía exactamente qué dar para un día como hoy, así que me dije: ¿por qué no hago algo de las cosas que sé hacer? Así que hice una página web donde te escribiría algo bonito. Lo hice con cariño, y espero que te guste.
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/736x/d7/b5/f5/d7b5f568262c26b861b535a3f3aada9d.jpg');">
+
+                    </div>
+                    <div class="flip-card-back">
+                        Para este punto, te preguntarás por qué te elegí a ti y por qué me tomaría el tiempo de crear algo así. Si bien llevamos hablando algo así como 2 meses, la única persona con la que interactúo es contigo. Así que decidí hacerlo, a mí me gusta agradecerle de alguna forma a las personas a las que les tengo cariño, y tú te has convertido en una de ellas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/564x/88/df/e4/88dfe41c43186feb6baaf7b8b47cea85.jpg');">
+
+                    </div>
+                    <div class="flip-card-back">
+                        Por último, espero que te encuentres muy bien. Que este San Valentín tengas un lindo día y la pases muy bien.
+                        Eres una persona increíble y tienes un corazón muy lindo. Te aprecio mucho, mucho.
+                        Con cariño, tu amigo Josué lolxd :)
+                    </div>
+                </div>
+            </div>
+        </div>
+  </body>
+</html>
